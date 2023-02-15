@@ -1,0 +1,55 @@
+/* Main Page*/
+.mainDiv{
+    background-color: rgb(36, 53, 63);
+}
+.navbarLine{
+    background-color: rgb(36, 53, 63) !important;
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.445);
+}
+.btnOne:hover{
+    background-color: transparent !important;
+}
+.navBtn:hover{
+    background-color: #FFC107 !important;
+    color: white  !important;
+}
+.content{
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.445);
+    width: 60%;
+    color: rgb(23, 162, 184);
+}
+
+/* signin & signup*/
+.contentSignIn{
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.445);
+    width: 60%;
+}
+.contentSignIn h1{
+    color: rgb(23, 162, 184);
+}
+.contentSignIn button{
+    border-color: rgb(23, 162, 184) !important ;
+    color: rgb(23, 162, 184);
+    transition: all 0.1s ease;
+}
+.contentSignIn button:hover{
+    background-color:rgb(23, 162, 184) !important ;
+    color: white;
+}
+.signupLog:hover{
+    text-decoration: underline !important;
+}
+.contentSignIn input::placeholder{
+    color: rgb(192, 188, 188) !important;
+}
+.contentSignIn input:focus{
+    border:1px solid rgb(23, 162, 184) !important ;
+    box-shadow: none !important;
+}
+.btnSigning{
+    color: rgb(23, 162, 184);
+}
+.btnSigning:focus{
+    color: rgb(23, 162, 184);
+    box-shadow: 2px 2px 5px #1E6B7B , -2px -2px 5px #1E6B7B !important;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/assign10.css">
+    <title>My Login</title>
+</head>
+<body>
+  
+    <!-- Home div -->
+    <div class="d-none" id="home">
+        <nav class="navbar bg-body-tertiary navbarLine px-5 position-fixed top-0 start-0 end-0">
+            <form class="container-fluid justify-content-start px-5">
+            <button class="btn btn-outline-success ms-5 text-white border-0 fs-5  text-uppercase btnOne" type="button">Smart Login</button>
+            <button class="btn btn-sm btn-outline-secondary ms-auto me-5 border border-1 border-warning text-white-50 py-2 fs-6 navBtn" id="logoutBtn" type="button">Logout</button>
+            </form>
+        </nav>
+
+        <div class="container-fluid mainDiv min-vh-100 text-center d-flex justify-content-center align-items-center">
+            <div class =" p-5 content">
+                <h1> Welcome <span id="homeSpan"></span> </h1>
+            </div>
+        </div>
+    </div>
+    
+    <!-- sign in code -->
+    <div class="container-fluid mainDiv min-vh-100 py-5 d-block" id="signinDiv">
+        <div class="container text-center p-5 contentSignIn">
+            <h1 class="py-2">Smart Login System</h1>
+            <input type="email" id="signinEmailInp" name="email" placeholder="Enter your email" class="form-control bg-transparent border border-1 border-white text-white my-4 ">
+            <input type="password" id="signinPassInp" name="password" placeholder="Enter your password" class="form-control bg-transparent border border-1 border-white text-white my-4">
+            <div id="signinWarning" class="text-center text-danger fs-6 m-auto pb-3"></div>
+            <button id="signinBtn" class="form-control bg-transparent border border-1 btnSigning" >Login</button>
+            <h6 class="text-center text-white py-3">Don't have an account? <a class="text-decoration-none text-white signupLog" onclick="signupLink()" href="#"> Sign Up </a></h6>
+        </div>
+    </div>
+
+    <!-- sign up code -->
+    <div class="container-fluid mainDiv min-vh-100 py-5 d-none" id="signupDiv">
+        <div class="container text-center p-5 contentSignIn">
+            <h1 class="py-2">Smart Login System</h1>
+            <input type="text" id="signupNameInp" name="name" placeholder="Enter your name" class="form-control bg-transparent border border-1 border-white text-white my-4 ">
+            <input type="email" id="signupEmailInp" name="email" placeholder="Enter your email" class="form-control bg-transparent border border-1 border-white text-white my-4 ">
+            <input type="password" id="signupPassInp" name="password" placeholder="Enter your password" class="form-control bg-transparent border border-1 border-white text-white my-4">
+            <div id="signupWarning" class="text-center text-danger fs-6 m-auto pb-3"></div>
+            <button id="signupBtn" class="form-control bg-transparent border border-1 btnSigning" >Sign UP</button>
+            <h6 class="text-center text-white py-3">You have an account? <a class="text-decoration-none text-white signupLog" onclick="signinLink()" href="#"> Signin </a></h6>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/assign10.js"></script>
+</body>
+</html>
